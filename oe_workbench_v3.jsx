@@ -7,7 +7,7 @@ export default function OEWorkbenchV3() {
   const [step, setStep] = useState('handoff');
   const [completedSteps, setCompletedSteps] = useState([]);
   const [lineItems, setLineItems] = useState(() => generateLineItems());
-
+  
   const openQuote = (quote) => {
     setActiveQuote(quote);
     setStep('handoff');
